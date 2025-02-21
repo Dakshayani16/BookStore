@@ -8,12 +8,12 @@ const app = express();
 
 app.use(
     cors({
-      origin: 'http://localhost:5173',
-      methods: ['GET', 'POST', 'PUT', 'DELETE'],
-      allowedHeaders: ['Content-Type'],
+        origin: ['http://localhost:5173', 'https://bookstorefirst.netlify.app'], // Add your Netlify frontend URL
+        methods: ['GET', 'POST', 'PUT', 'DELETE'],
+        allowedHeaders: ['Content-Type'],
     })
-  );
-  
+);
+
   app.use(express.json());
 // middleware for parsing request body
 app.use(express.json());
