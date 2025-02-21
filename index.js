@@ -8,7 +8,7 @@ const app = express();
 
 app.use(
     cors({
-        origin: ['http://localhost:5173', 'https://bookstorefirst.netlify.app'], // Add your Netlify frontend URL
+        origin: ['http://localhost:5173', 'https://bookstorefirst.netlify.app','https://beautiful-swan-687929.netlify.app'], // Add your Netlify frontend URL
         methods: ['GET', 'POST', 'PUT', 'DELETE'],
         allowedHeaders: ['Content-Type'],
     })
